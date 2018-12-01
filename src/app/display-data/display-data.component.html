@@ -1,8 +1,8 @@
 <h2>{{title}}</h2>
-<h3>My favorite card is: {{myFavCard}}</h3>
+<h3>My favorite card is: {{myFavCard.card_name}}</h3>
 <p>Cards: </p>
 <ul>
   <li *ngFor="let card of cards">
-    {{ card }}
+    {{ card.card_name }}
   </li>
 </ul>
