@@ -1,5 +1,8 @@
 <h3>
   {{cardName}}
   <br />
-  <img src="{{cardMiniImage}}" style="height: 200px"/>
+  <img src="{{cardMiniImage}}" style="height: 200px" />
+  <br />
+  <button (click)="showIllustrator()">Show Illustrator Name</button>
+  <h4 *ngIf="showIllu">{{illustrator}}</h4>
 </h3>
