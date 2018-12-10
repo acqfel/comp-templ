@@ -5,4 +5,8 @@
   <br />
   <button (click)="showIllustrator()">Show Illustrator Name</button>
   <h4 *ngIf="showIllu">{{illustrator}}</h4>
+  <p>Add your comment:</p>
+  <input [value]="comment"
+       (input)="comment=$event.target.value" >
+  <p>Comment preview: {{ comment }}</p>
 </h3>
